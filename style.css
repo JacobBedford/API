@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    min-width: 347px;
+}
+h1 {
+    font-size: 8rem;
+    position: relative;
+    right: 2px;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    background-color: #000000a3;
+    color: white;
+    padding: 1.5em 2rem;
+    width: 100%;
+    justify-content: space-between
+}
+
+
+
+nav p {
+    font-size: 2.4rem;
+    flex-grow: 1; 
+}
+
+form {
+    text-align: right;
+    width: 25%;
+    min-width: 142.550px;
+}
+input {
+    text-align: center;
+    height: 100%;
+    border: none;  
+    min-width: 114px;
+    width: 70%;
+}
+
+button {
+    text-align: center;
+    background-color: lightgray;
+    padding: .5em 1em;
+    border: none;
+    transition: background-color 0.2s;
+    width: 20%;
+    height: 100%;
+    
+}
+
+#random-button {
+    width: 15%;
+    min-width: 137px;
+    white-space: nowrap;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #e2e1e1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: inline-block;
+    padding: 0 3rem;
+}
+
+
+#names {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5rem;
+}
+
+
+#pokeInfo {
+    margin-top: 5rem;
+    display: flex;  
+    justify-content: space-between;
+}
+
+
+#pokeInfo p {
+    /* font-weight: bold; */
+    margin: 1.8rem 0;
+    font-size: 1.8rem;
+}
+
+#stats {
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img{
+    height: 350px;
+}
+
+@media (max-width: 712px) {
+    #pokeInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pokeImage {
+        order: -1;
+    }
+
+    #stats {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #stats p {
+        margin: 1rem;
+    }
+}
